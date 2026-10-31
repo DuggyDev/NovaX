@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nl"><head><meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src ws: wss:; style-src 'self' 'unsafe-inline'; img-src 'self' data:">
+<title>NovaX</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="login"><div class="card">
+  <img src="logo.png" width="110">
+  <h1>NovaX</h1><p>Welkom in de ruimte 🚀</p>
+  <input id="name" placeholder="Gebruikersnaam" maxlength="20">
+  <input id="server" value="ws://localhost:3000" placeholder="Server adres">
+  <button id="go">Lancering</button><div id="err"></div>
+</div></div>
+<div id="app" class="hidden">
+  <nav id="servers"><img src="logo.png" class="srv active" title="NovaX"></nav>
+  <aside id="side">
+    <header>NovaX HQ</header>
+    <div class="cat">TEKSTKANALEN</div>
+    <div id="channels"></div>
+    <div class="cat">SPRAAKKANALEN</div>
+    <div class="ch dim">🔊 Orbit (binnenkort)</div>
+    <div class="ch dim">🔊 Maanbasis (binnenkort)</div>
+    <footer><span class="dot"></span><span id="me"></span></footer>
+  </aside>
+  <main>
+    <header id="chtitle"></header>
+    <div id="msgs"></div>
+    <div id="inputbar"><input id="msg" placeholder="Stuur een bericht..." autocomplete="off"></div>
+  </main>
+  <aside id="members"><div class="cat">ONLINE</div><div id="mlist"></div></aside>
+</div>
+<script src="app.js"></script>
+</body></html>

@@ -1,0 +1,28 @@
+*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,sans-serif;background:#0b0720;color:#e8e4ff;height:100vh;overflow:hidden}
+.hidden{display:none!important}
+#login{height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 30% 20%,#3b1a7a,#0b0720 60%)}
+.card{background:#150d33;border:1px solid #3a2a7a;border-radius:16px;padding:32px;width:340px;text-align:center;box-shadow:0 0 40px #8a2be255}
+.card h1{margin:8px 0 0;background:linear-gradient(90deg,#d946ef,#22d3ee);-webkit-background-clip:text;color:transparent}
+input{width:100%;padding:11px;margin:6px 0;border-radius:8px;border:1px solid #3a2a7a;background:#0b0720;color:#fff;outline:none}
+input:focus{border-color:#a855f7}
+button{width:100%;padding:11px;margin-top:8px;border:0;border-radius:8px;color:#fff;font-weight:600;cursor:pointer;background:linear-gradient(90deg,#a855f7,#3b82f6)}
+#err{color:#f87171;margin-top:8px;font-size:13px}
+#app{display:flex;height:100vh}
+#servers{width:72px;background:#07041a;padding:12px 0;display:flex;flex-direction:column;align-items:center}
+.srv{width:48px;height:48px;border-radius:16px;background:#150d33;padding:5px}
+.srv.active{box-shadow:0 0 14px #a855f7}
+#side{width:240px;background:#100a28;display:flex;flex-direction:column}
+#side header,main>header{height:48px;padding:14px 16px;font-weight:700;border-bottom:1px solid #251a52}
+.cat{font-size:11px;color:#8b82c0;padding:16px 16px 4px;font-weight:700}
+.ch{padding:7px 12px;margin:1px 8px;border-radius:6px;cursor:pointer;color:#a9a0d8}
+.ch:hover{background:#1c1340}.ch.active{background:#2a1c5c;color:#fff}.dim{opacity:.5;cursor:default}
+#side footer{margin-top:auto;padding:12px;background:#07041a;display:flex;align-items:center;gap:8px}
+.dot{width:10px;height:10px;border-radius:50%;background:#22c55e}
+main{flex:1;display:flex;flex-direction:column;background:#0f0926;min-width:0}
+#msgs{flex:1;overflow-y:auto;padding:16px}
+.m{margin-bottom:14px}.m b{color:#d946ef}.m small{color:#8b82c0;margin-left:8px}.m div{margin-top:2px;word-wrap:break-word}
+#inputbar{padding:0 16px 20px}
+#inputbar input{padding:13px;background:#1c1340;border-radius:10px}
+#members{width:220px;background:#100a28}
+.mem{padding:6px 16px;display:flex;align-items:center;gap:8px}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-thumb{background:#3a2a7a;border-radius:4px}

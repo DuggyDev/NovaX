@@ -1,0 +1,21 @@
+{
+  "name": "novax",
+  "version": "1.0.0",
+  "description": "NovaX - space chat",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --publish never"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.novax.app",
+    "productName": "NovaX",
+    "files": ["main.js", "src/**/*"],
+    "win": { "target": "nsis", "icon": "build/icon.png" },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true }
+  }
+}
